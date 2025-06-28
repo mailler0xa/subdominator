@@ -477,7 +477,7 @@
     "discussion": "https://osintteam.blog/wasabi-bucket-takeover-bug-bounty-7520e8decde7",
     "documentation": "",
     "fingerprint": "The specified bucket does not exist",
-    "http_status": null,
+    "http_status": 404,
     "nxdomain": false,
     "service": "Wasabi",
     "status": "Vulnerable",
@@ -498,7 +498,7 @@
     "cname": [ "target.substack-custom-domains.com" ],
     "discussion": "https://github.com/EdOverflow/can-i-take-over-xyz/issues/443",
     "documentation": "https://blog.nietaanraken.nl/posts/substack-domain-takeover/",
-    "fingerprint": "CNAME Cross-User Banned",
+    "fingerprint": "something is wrong with this site's configuration",
     "http_status": 409,
     "nxdomain": false,
     "service": "Substack",
@@ -507,13 +507,23 @@
   },
   {
     "cname": [ "app.niceboard.co" ],
+    "discussion": "https://github.com/EdOverflow/can-i-take-over-xyz/issues/352",
+    "documentation": "https://help.niceboard.co/article/4-how-to-connect-domain",
+    "fingerprint": "HTTP_STATUS=301",
+    "http_status": 301,
+    "nxdomain": false,
+    "service": "Niceboard",
+    "status": "Vulnerable",
+    "vulnerable": true
+  },
+  {
     "a": [ "173.255.233.147" ],
     "discussion": "https://github.com/EdOverflow/can-i-take-over-xyz/issues/352",
     "documentation": "https://help.niceboard.co/article/4-how-to-connect-domain",
     "fingerprint": "HTTP_STATUS=301",
     "http_status": 301,
     "nxdomain": false,
-    "service": "Softr",
+    "service": "Niceboard-Domain",
     "status": "Vulnerable",
     "vulnerable": true
   },
@@ -535,7 +545,7 @@
     "vulnerable": true
   },
   {
-    "cname": [ "hashnode.network " ],
+    "cname": [ "hashnode.network" ],
     "discussion": "https://github.com/EdOverflow/can-i-take-over-xyz/issues/434",
     "documentation": "",
     "fingerprint": "DEPLOYMENT_NOT_FOUND",
